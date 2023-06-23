@@ -27,6 +27,8 @@ int newproductsnum[100];
 string products[100] = {"Milk", "Rice", "Sugar", "Butter", "Bread", "Meat", "Fish", "Cereal", "Candy"};
 
 void menu();
+void addproducts();
+
 int main(){
  menu();
 
@@ -48,5 +50,42 @@ void menu(){
 
     cout << "Enter your choice here:";
     cin >> menunum;
+
+    switch (menunum)
+    {
+    case 1:
+        addproducts();
+        break;
+    
+    default:
+        break;
+    }
+
+}
+void addproducts(){
+
+    int choice;
+
+		cout << "1. Add products to stock" << endl;
+		cout << "2. Go to menu  " << endl;
+		cout << "3. View Stock" << endl;
+		cout << "4. Add more products" << endl;
+
+		cout << "Enter here: ";
+		cin >> choice;
+
+        if (choice == 1)
+		{
+
+			system("cls");
+			for (int p = 0; p < 9; p++)
+			{
+				cout << "\nEnter Amount of " << products[p] << ": ";
+				cin >> productsnum[p];
+				cout << "Enter price of " << products[p] << ": Php";
+				cin >> price[p];
+			}
+		}
+
 
 }
