@@ -88,9 +88,9 @@ void addproducts(){
             case 2:
                 menu();
             case 3:
-                viewstock();
+                // viewstock();
             case 4:
-                addmoreproducts();
+                // addmoreproducts();
                 
         }
 
