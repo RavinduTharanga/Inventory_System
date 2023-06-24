@@ -97,3 +97,10 @@ void addproducts(){
 
 
 }
+
+void viewstock(){
+
+	
+}
+
+	
