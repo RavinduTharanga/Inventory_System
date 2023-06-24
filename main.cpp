@@ -74,18 +74,26 @@ void addproducts(){
 		cout << "Enter here: ";
 		cin >> choice;
 
-        if (choice == 1)
-		{
+        switch(choice){
 
-			system("cls");
-			for (int p = 0; p < 9; p++)
-			{
-				cout << "\nEnter Amount of " << products[p] << ": ";
-				cin >> productsnum[p];
-				cout << "Enter price of " << products[p] << ": Php";
-				cin >> price[p];
-			}
-		}
+            case 1:
+                system("cls");
+                for (int p = 0; p < 9; p++)
+                {
+                    cout << "\nEnter Amount of " << products[p] << ": ";
+                    cin >> productsnum[p];
+                    cout << "Enter price of " << products[p] << ": Php";
+                    cin >> price[p];
+                }
+            case 2:
+                menu();
+            case 3:
+                viewstock();
+            case 4:
+                addmoreproducts();
+                
+        }
+
 
 
 }
