@@ -103,4 +103,9 @@ void viewstock(){
 	
 }
 
+void addmoreproducts(){
+
+	
+}
+
 	
